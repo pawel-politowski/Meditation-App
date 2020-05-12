@@ -9,22 +9,93 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-family: "Montserrat", sans-serif;
+  }
+
+.time,
+.sound {
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+  }
+
+.time button,
+.sound button {
+  color: white;
+  width: 35%;
+  height: 10%;  
+  font-size: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.8s ease;
 }
 
-.time {
-    background: lightblue;
-    flex: 1;
-    height: 100%;
+.time button {
+    border: 2px solid white;  
+    background: none;  
+}
+
+.time button:hover {
+    color: black;
+    background: white;
+}
+
+button img {
+    height: 100%;    
+}
+
+.rain {
+    border: 2px solid #000080;
+    background: none;    
+}
+
+.rain:hover, .beach:hover, .forest:hover {     
+    transform: scale(1.1);   
+}
+
+.beach {
+    border: 2px solid #FFFF00;
+    background: none;
+}
+
+.forest {
+    border: 2px solid #008000;
+    background: none;
+}
+
+.time-display {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-size: 50px;
 }
 
 .player {
-    background: lightcoral;
+    position: relative;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
     flex: 1;
-    height: 100%;
 }
 
-.sound {
-    background: lightseagreen;
-    flex: 1;
-    height: 100%;
+.player svg {
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.vid-container {
+   position: fixed;
+   top: 0%;
+   left: 0%;
+   width: 100%;
+   z-index: -1;
 }
