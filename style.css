@@ -10,7 +10,7 @@
     justify-content: space-evenly;
     align-items: center;
     font-family: "Montserrat", sans-serif;
-  }
+}
 
 .time,
 .sound {
@@ -20,7 +20,7 @@
     align-items: center;
     flex-direction: column;
     flex: 1;
-  }
+}
 
 .time button,
 .sound button {
@@ -46,8 +46,6 @@
 button img {
     height: 100%;    
 }
-
-
 
 .rain {
     border: 2px solid #000080;
