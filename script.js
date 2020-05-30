@@ -31,9 +31,7 @@ play.addEventListener("click", function() {
 
 const restartSong = song =>{
     let currentTime = song.currentTime;
-    song.currentTime = 0;
-    console.log("ciao")
-
+    song.currentTime = 0;   
 }
 
 timeSelect.forEach(option => {
